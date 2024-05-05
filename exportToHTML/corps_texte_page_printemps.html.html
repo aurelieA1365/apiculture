@@ -1,0 +1,341 @@
+<html>
+<head>
+<title>corps_texte_page_printemps.html</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #d5b778;}
+.s1 { color: #bcbec4;}
+.s2 { color: #bababa;}
+.s3 { color: #6aab73;}
+.s4 { color: #7a7e85;}
+.s5 { color: #2aacb8;}
+.s6 { color: #56a8f5;}
+.s7 { color: #cf8e6d;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+corps_texte_page_printemps.html</font>
+</center></td></tr></table>
+<pre><span class="s0">&lt;!DOCTYPE </span><span class="s2">html</span><span class="s0">&gt;</span>
+<span class="s0">&lt;html </span><span class="s2">lang</span><span class="s3">=&quot;fr&quot;</span><span class="s0">&gt;</span>
+<span class="s0">&lt;head&gt;</span>
+    <span class="s0">&lt;meta </span><span class="s2">charset</span><span class="s3">=&quot;UTF-8&quot;</span><span class="s0">&gt;</span>
+    <span class="s0">&lt;title&gt;</span><span class="s1">Le printemps</span><span class="s0">&lt;/title&gt;</span>
+    <span class="s0">&lt;script </span><span class="s2">src</span><span class="s3">=” </span><span class="s2">jquery-2.0.3.min.js”</span><span class="s0">&gt;&lt;/script&gt;</span>
+    <span class="s0">&lt;link </span><span class="s2">rel</span><span class="s3">=&quot;stylesheet&quot; </span><span class="s2">href</span><span class="s3">=&quot;https://fonts.googleapis.com/css?family=Sofia&quot;</span><span class="s0">&gt;</span>
+    <span class="s4">&lt;!-- Compiled and minified CSS --&gt;</span>
+    <span class="s0">&lt;link </span><span class="s2">rel</span><span class="s3">=&quot;stylesheet&quot; </span><span class="s2">href</span><span class="s3">=&quot;https://cdn.jsdelivr.net/npm/@materializecss/materialize@2.0.3-alpha/dist/css/materialize.min.css&quot;</span><span class="s0">&gt;</span>
+
+    <span class="s4">&lt;!-- Compiled and minified JavaScript --&gt;</span>
+    <span class="s0">&lt;script </span><span class="s2">src</span><span class="s3">=&quot;https://cdn.jsdelivr.net/npm/@materializecss/materialize@2.0.3-alpha/dist/js/materialize.min.js&quot;</span><span class="s0">&gt;&lt;/script&gt;</span>
+    <span class="s4">&lt;!-- Material Icons --&gt;</span>
+    <span class="s0">&lt;link </span><span class="s2">href</span><span class="s3">=&quot;https://fonts.googleapis.com/icon?family=Material+Icons&quot; </span><span class="s2">rel</span><span class="s3">=&quot;stylesheet&quot; </span><span class="s0">/&gt;</span>
+    <span class="s4">&lt;!-- Material Symbols - Outlined Set --&gt;</span>
+    <span class="s0">&lt;link </span><span class="s2">href</span><span class="s3">=&quot;https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&quot; </span><span class="s2">rel</span><span class="s3">=&quot;stylesheet&quot; </span><span class="s0">/&gt;</span>
+    <span class="s4">&lt;!-- Material Symbols - Rounded Set --&gt;</span>
+    <span class="s0">&lt;link </span><span class="s2">href</span><span class="s3">=&quot;https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded&quot; </span><span class="s2">rel</span><span class="s3">=&quot;stylesheet&quot; </span><span class="s0">/&gt;</span>
+    <span class="s4">&lt;!-- Material Symbols - Sharp Set --&gt;</span>
+    <span class="s0">&lt;link </span><span class="s2">href</span><span class="s3">=&quot;https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp&quot; </span><span class="s2">rel</span><span class="s3">=&quot;stylesheet&quot; </span><span class="s0">/&gt;</span>
+
+    <span class="s0">&lt;style&gt;</span>
+        <span class="s0">body </span><span class="s1">{</span>
+            <span class="s2">background-image</span><span class="s1">: </span><span class="s0">url</span><span class="s1">(</span><span class="s3">&quot;herbe.jpg&quot;</span><span class="s1">);</span>
+            <span class="s2">width</span><span class="s1">: </span><span class="s5">940</span><span class="s3">px</span><span class="s1">;</span>
+        <span class="s1">}</span>
+        <span class="s0">header</span>
+        <span class="s1">{</span>
+            <span class="s2">display</span><span class="s1">: </span><span class="s3">block</span><span class="s1">;</span>
+            <span class="s2">position</span><span class="s1">: </span><span class="s3">relative</span><span class="s1">;</span>
+            <span class="s2">top</span><span class="s1">: </span><span class="s5">0</span><span class="s1">;</span>
+            <span class="s2">align</span><span class="s1">: </span><span class="s3">center</span><span class="s1">;</span>
+            <span class="s2">margin-left</span><span class="s1">: </span><span class="s5">35</span><span class="s3">px</span><span class="s1">;</span>
+            <span class="s2">margin-right</span><span class="s1">: </span><span class="s5">35</span><span class="s3">px</span><span class="s1">;</span>
+            <span class="s2">width</span><span class="s1">: </span><span class="s5">110</span><span class="s1">%;</span>
+        <span class="s1">}</span>
+        <span class="s0">#outils</span>
+        <span class="s1">{</span>
+            <span class="s2">position</span><span class="s1">: </span><span class="s3">relative</span><span class="s1">;</span>
+            <span class="s2">left</span><span class="s1">: </span><span class="s5">100</span><span class="s3">px</span><span class="s1">;</span>
+            <span class="s2">top</span><span class="s1">: </span><span class="s5">100</span><span class="s3">px</span><span class="s1">;</span>
+            <span class="s2">width</span><span class="s1">: </span><span class="s5">20</span><span class="s1">%;</span>
+        <span class="s1">}</span>
+        <span class="s0">div</span><span class="s1">.</span><span class="s0">gallery </span><span class="s1">{</span>
+            <span class="s2">margin</span><span class="s1">: </span><span class="s5">5</span><span class="s3">px</span><span class="s1">;</span>
+            <span class="s2">float</span><span class="s1">: </span><span class="s3">left</span><span class="s1">;</span>
+            <span class="s2">clear</span><span class="s1">: </span><span class="s3">left</span><span class="s1">;</span>
+            <span class="s2">width</span><span class="s1">: </span><span class="s5">300</span><span class="s3">px</span><span class="s1">;</span>
+        <span class="s1">}</span>
+        <span class="s0">div</span><span class="s1">.</span><span class="s0">gallery img </span><span class="s1">{</span>
+            <span class="s2">width</span><span class="s1">: </span><span class="s5">100</span><span class="s1">%;</span>
+            <span class="s2">height</span><span class="s1">: </span><span class="s3">auto</span><span class="s1">;</span>
+        <span class="s1">}</span>
+        <span class="s0">#outils</span>
+        <span class="s1">{</span>
+            <span class="s2">position</span><span class="s1">: </span><span class="s3">relative</span><span class="s1">;</span>
+            <span class="s2">left</span><span class="s1">: </span><span class="s5">100</span><span class="s3">px</span><span class="s1">;</span>
+            <span class="s2">top</span><span class="s1">: </span><span class="s5">100</span><span class="s3">px</span><span class="s1">;</span>
+            <span class="s2">width</span><span class="s1">: </span><span class="s5">20</span><span class="s1">%;</span>
+        <span class="s1">}</span>
+        <span class="s0">div</span><span class="s1">.</span><span class="s0">gallery </span><span class="s1">{</span>
+            <span class="s2">margin</span><span class="s1">: </span><span class="s5">5</span><span class="s3">px</span><span class="s1">;</span>
+            <span class="s2">float</span><span class="s1">: </span><span class="s3">left</span><span class="s1">;</span>
+            <span class="s2">clear</span><span class="s1">: </span><span class="s3">left</span><span class="s1">;</span>
+            <span class="s2">width</span><span class="s1">: </span><span class="s5">300</span><span class="s3">px</span><span class="s1">;</span>
+        <span class="s1">}</span>
+
+        <span class="s0">div</span><span class="s1">.</span><span class="s0">gallery img </span><span class="s1">{</span>
+            <span class="s2">width</span><span class="s1">: </span><span class="s5">100</span><span class="s1">%;</span>
+            <span class="s2">height</span><span class="s1">: </span><span class="s5">400</span><span class="s3">px</span><span class="s1">;</span>
+        <span class="s1">}</span>
+        <span class="s1">.</span><span class="s0">card-title</span>
+        <span class="s1">{</span>
+            <span class="s2">text-align</span><span class="s1">: </span><span class="s3">center</span><span class="s1">;</span>
+        <span class="s1">}</span>
+        <span class="s0">#card-1-text</span>
+        <span class="s1">{</span>
+            <span class="s2">display</span><span class="s1">: </span><span class="s3">block</span><span class="s1">;</span>
+            <span class="s2">position</span><span class="s1">: </span><span class="s3">relative</span><span class="s1">;</span>
+            <span class="s2">bottom</span><span class="s1">: </span><span class="s5">30</span><span class="s3">px</span><span class="s1">;</span>
+        <span class="s1">}</span>
+        <span class="s1">.</span><span class="s0">bouton_video</span>
+        <span class="s1">{</span>
+            <span class="s2">display</span><span class="s1">: </span><span class="s3">block</span><span class="s1">;</span>
+            <span class="s2">position</span><span class="s1">: </span><span class="s3">relative</span><span class="s1">;</span>
+            <span class="s2">left</span><span class="s1">: </span><span class="s5">10</span><span class="s3">px</span><span class="s1">;</span>
+            <span class="s2">top</span><span class="s1">: </span><span class="s5">5</span><span class="s3">px</span><span class="s1">;</span>
+            <span class="s2">color</span><span class="s1">: </span><span class="s3">white</span><span class="s1">;</span>
+        <span class="s1">}</span>
+        <span class="s1">.</span><span class="s0">bouton</span>
+        <span class="s1">{</span>
+            <span class="s2">display</span><span class="s1">: </span><span class="s3">block</span><span class="s1">;</span>
+            <span class="s2">position</span><span class="s1">: </span><span class="s3">relative</span><span class="s1">;</span>
+            <span class="s2">left</span><span class="s1">: </span><span class="s5">220</span><span class="s3">px</span><span class="s1">;</span>
+            <span class="s2">bottom</span><span class="s1">: </span><span class="s5">75</span><span class="s3">px</span><span class="s1">;</span>
+            <span class="s2">color</span><span class="s1">: </span><span class="s3">white</span><span class="s1">;</span>
+        <span class="s1">}</span>
+        <span class="s0">#card-5-content</span>
+        <span class="s1">{</span>
+            <span class="s2">height</span><span class="s1">: </span><span class="s5">20</span><span class="s3">px</span><span class="s1">;</span>
+
+        <span class="s1">}</span>
+        <span class="s0">#card-5-text</span>
+        <span class="s1">{</span>
+            <span class="s2">display</span><span class="s1">: </span><span class="s3">block</span><span class="s1">;</span>
+            <span class="s2">position</span><span class="s1">: </span><span class="s3">relative</span><span class="s1">;</span>
+            <span class="s2">bottom</span><span class="s1">: </span><span class="s5">52</span><span class="s3">px</span><span class="s1">;</span>
+        <span class="s1">}</span>
+        <span class="s0">#h1</span>
+        <span class="s1">{</span>
+            <span class="s2">background-color</span><span class="s1">: </span><span class="s6">#1f9412</span><span class="s1">;</span>
+            <span class="s2">border-style</span><span class="s1">: </span><span class="s3">solid</span><span class="s1">;</span>
+            <span class="s2">box-shadow</span><span class="s1">:  </span><span class="s5">0 4</span><span class="s3">px </span><span class="s5">8</span><span class="s3">px </span><span class="s5">0 </span><span class="s0">rgba</span><span class="s1">(</span><span class="s5">0</span><span class="s1">, </span><span class="s5">0</span><span class="s1">, </span><span class="s5">0</span><span class="s1">, </span><span class="s5">0.2</span><span class="s1">), </span><span class="s5">0 6</span><span class="s3">px </span><span class="s5">20</span><span class="s3">px </span><span class="s5">0 </span><span class="s0">rgba</span><span class="s1">(</span><span class="s5">0</span><span class="s1">, </span><span class="s5">0</span><span class="s1">, </span><span class="s5">0</span><span class="s1">, </span><span class="s5">0.19</span><span class="s1">);</span>
+            <span class="s2">color</span><span class="s1">: </span><span class="s3">white </span><span class="s1">;</span>
+            <span class="s2">text-align</span><span class="s1">: </span><span class="s3">center</span><span class="s1">;</span>
+            <span class="s2">font-family</span><span class="s1">: </span><span class="s3">&quot;Source Sans Pro&quot;</span><span class="s1">;</span>
+            <span class="s2">font-size</span><span class="s1">: </span><span class="s5">100</span><span class="s3">px</span><span class="s1">;</span>
+            <span class="s2">padding-bottom</span><span class="s1">: </span><span class="s5">50</span><span class="s3">px</span><span class="s1">;</span>
+            <span class="s2">padding-top</span><span class="s1">: </span><span class="s5">50</span><span class="s3">px</span><span class="s1">;</span>
+        <span class="s1">}</span>
+        <span class="s0">div</span><span class="s1">.</span><span class="s0">blocNotes </span><span class="s1">{</span>
+            <span class="s2">position</span><span class="s1">: </span><span class="s3">relative</span><span class="s1">;</span>
+            <span class="s2">left</span><span class="s1">: </span><span class="s5">450</span><span class="s3">px</span><span class="s1">;</span>
+            <span class="s2">bottom</span><span class="s1">: </span><span class="s5">100</span><span class="s3">px</span><span class="s1">;</span>
+        <span class="s1">}</span>
+        <span class="s0">figcaption</span>
+        <span class="s1">{</span>
+            <span class="s2">position</span><span class="s1">: </span><span class="s3">relative</span><span class="s1">;</span>
+            <span class="s2">left</span><span class="s1">: </span><span class="s5">650</span><span class="s3">px</span><span class="s1">;</span>
+            <span class="s2">bottom</span><span class="s1">: </span><span class="s5">900</span><span class="s3">px</span><span class="s1">;</span>
+        <span class="s1">}</span>
+        <span class="s0">figcaption header</span>
+        <span class="s1">{</span>
+            <span class="s2">position</span><span class="s1">: </span><span class="s3">absolute</span><span class="s1">;</span>
+            <span class="s2">left</span><span class="s1">: </span><span class="s5">180</span><span class="s3">px</span><span class="s1">;</span>
+            <span class="s2">top</span><span class="s1">: </span><span class="s5">60</span><span class="s3">px</span><span class="s1">;</span>
+            <span class="s2">color</span><span class="s1">: </span><span class="s3">black</span><span class="s1">;</span>
+            <span class="s2">font-family</span><span class="s1">: </span><span class="s3">&quot;Sofia&quot;</span><span class="s1">;</span>
+            <span class="s2">font-size</span><span class="s1">: </span><span class="s5">45</span><span class="s3">px</span><span class="s1">;</span>
+        <span class="s1">}</span>
+        <span class="s0">form</span>
+        <span class="s1">{</span>
+            <span class="s2">position</span><span class="s1">: </span><span class="s3">absolute</span><span class="s1">;</span>
+            <span class="s2">top</span><span class="s1">:</span><span class="s5">150</span><span class="s3">px</span><span class="s1">;</span>
+            <span class="s2">left</span><span class="s1">: </span><span class="s5">100</span><span class="s3">px</span><span class="s1">;</span>
+        <span class="s1">}</span>
+        <span class="s1">.</span><span class="s0">checkbox-text</span>
+        <span class="s1">{</span>
+            <span class="s2">display</span><span class="s1">: </span><span class="s3">block</span><span class="s1">;</span>
+            <span class="s2">position</span><span class="s1">: </span><span class="s3">relative</span><span class="s1">;</span>
+            <span class="s2">top</span><span class="s1">: </span><span class="s5">10</span><span class="s3">px</span><span class="s1">;</span>
+            <span class="s2">font-family</span><span class="s1">: </span><span class="s3">&quot;Roboto&quot;</span><span class="s1">, </span><span class="s3">sans-serif</span><span class="s1">;</span>
+            <span class="s2">font-size</span><span class="s1">: </span><span class="s5">500</span><span class="s3">px</span><span class="s1">;</span>
+            <span class="s2">line-height</span><span class="s1">: </span><span class="s5">40</span><span class="s3">px</span><span class="s1">;</span>
+        <span class="s1">}</span>
+        <span class="s0">#septieme</span>
+        <span class="s1">{</span>
+            <span class="s2">position</span><span class="s1">: </span><span class="s3">absolute</span><span class="s1">;</span>
+            <span class="s2">left</span><span class="s1">: </span><span class="s5">150</span><span class="s3">px</span><span class="s1">;</span>
+            <span class="s2">top</span><span class="s1">: </span><span class="s5">450</span><span class="s3">px</span><span class="s1">;</span>
+            <span class="s2">color</span><span class="s1">: </span><span class="s3">black</span><span class="s1">;</span>
+            <span class="s2">font-family</span><span class="s1">: </span><span class="s3">&quot;Sofia&quot;</span><span class="s1">;</span>
+            <span class="s2">text-align</span><span class="s1">: </span><span class="s3">center</span><span class="s1">;</span>
+            <span class="s2">font-size</span><span class="s1">: </span><span class="s5">40</span><span class="s3">px</span><span class="s1">;</span>
+        <span class="s1">}</span>
+        <span class="s0">&lt;/style&gt;</span>
+
+    <span class="s0">&lt;header </span><span class="s2">id</span><span class="s3">=&quot;h1&quot;</span><span class="s0">&gt;</span><span class="s1">Le printemps</span><span class="s0">&lt;/header&gt;</span>
+
+<span class="s0">&lt;/head&gt;</span>
+<span class="s0">&lt;body&gt;</span>
+<span class="s0">&lt;div </span><span class="s2">class </span><span class="s3">= row</span><span class="s0">&gt;</span>
+    <span class="s0">&lt;div </span><span class="s2">id </span><span class="s3">= &quot;outils&quot; </span><span class="s2">class </span><span class="s3">= &quot;col s6&quot;</span><span class="s0">&gt;</span>
+        <span class="s0">&lt;div </span><span class="s2">class </span><span class="s3">= &quot;row&quot;</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;gallery&quot; </span><span class="s2">class </span><span class="s3">= &quot;col 1&quot;</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;a </span><span class="s2">target</span><span class="s3">=&quot;_blank&quot; </span><span class="s2">href</span><span class="s3">=&quot;cire_1.gif&quot;</span><span class="s0">&gt;&lt;/a&gt;</span>
+                <span class="s0">&lt;div </span><span class="s2">id </span><span class="s3">= &quot;card-1&quot; </span><span class="s2">class</span><span class="s3">=&quot;card&quot;</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;card-image&quot;</span><span class="s0">&gt;</span>
+                        <span class="s0">&lt;video </span><span class="s2">autoplay controls class </span><span class="s3">= &quot;responsive-video&quot;</span><span class="s0">&gt;</span>
+                            <span class="s0">&lt;source </span><span class="s2">src </span><span class="s3">= &quot;printemps_video_abeilles.mp4&quot; </span><span class="s2">type</span><span class="s3">=&quot;video/mp4&quot;</span><span class="s0">&gt;</span>
+                        <span class="s0">&lt;/video&gt;</span>
+                        <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;activator waves-effect waves-light&quot; </span><span class="s2">style</span><span class="s3">=&quot;</span><span class="s2">position</span><span class="s1">:</span><span class="s3">absolute</span><span class="s1">;</span><span class="s2">top</span><span class="s1">:</span><span class="s5">0</span><span class="s1">;</span><span class="s2">bottom</span><span class="s1">:</span><span class="s5">0</span><span class="s1">;</span><span class="s2">right</span><span class="s1">:</span><span class="s5">0</span><span class="s1">;</span><span class="s2">left</span><span class="s1">:</span><span class="s5">0</span><span class="s1">;</span><span class="s3">&quot;</span><span class="s0">&gt;&lt;/div&gt;</span>
+                        <span class="s0">&lt;span </span><span class="s2">class </span><span class="s3">= &quot;bouton_video&quot;</span><span class="s0">&gt;</span>
+                            <span class="s0">&lt;a </span><span class="s2">class</span><span class="s3">=&quot;btn-floating btn-large waves-effect waves-light&quot; </span><span class="s2">onclick </span><span class="s3">= &quot;</span><span class="s1">window.location;href = </span><span class="s3">'https://drive.google.com/file/d/1KBnCecoYZIpXn_IJ5F1zRFvOBPUKXIc8/view?usp=sharing'&quot;</span><span class="s0">&gt;</span>
+                                <span class="s0">&lt;i </span><span class="s2">class</span><span class="s3">=&quot;material-icons&quot;</span><span class="s0">&gt;</span><span class="s1">add</span><span class="s0">&lt;/i&gt;</span>
+                            <span class="s0">&lt;/a&gt;</span>
+                        <span class="s0">&lt;/span&gt;</span>
+                    <span class="s0">&lt;/div&gt;</span>
+                    <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;card-content&quot;</span><span class="s0">&gt;</span>
+                        <span class="s0">&lt;span </span><span class="s2">id </span><span class="s3">= &quot;card-1-text&quot; </span><span class="s2">class</span><span class="s3">=&quot;card-title activator&quot;</span><span class="s0">&gt;</span><span class="s1">Le déshivernage</span><span class="s0">&lt;/span&gt;</span>
+                    <span class="s0">&lt;/div&gt;</span>
+                <span class="s0">&lt;/div&gt;</span>
+            <span class="s0">&lt;/div&gt;</span>
+            <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;gallery&quot; </span><span class="s2">class </span><span class="s3">= &quot;col 2&quot;</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;a </span><span class="s2">target</span><span class="s3">=&quot;_blank&quot; </span><span class="s2">href</span><span class="s3">=&quot;oeillet_dinde.jpg&quot;</span><span class="s0">&gt;&lt;/a&gt;</span>
+                <span class="s0">&lt;div </span><span class="s2">id </span><span class="s3">= &quot;card-2&quot; </span><span class="s2">class</span><span class="s3">=&quot;card&quot;</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;card-image&quot;</span><span class="s0">&gt;</span>
+                        <span class="s0">&lt;img </span><span class="s2">src</span><span class="s3">=&quot;oeillet_dinde.jpg&quot; </span><span class="s2">height</span><span class="s3">=&quot;4032&quot; </span><span class="s2">width</span><span class="s3">=&quot;3024&quot;</span><span class="s0">/&gt;</span>
+                        <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;activator waves-effect waves-light&quot; </span><span class="s2">style</span><span class="s3">=&quot;</span><span class="s2">position</span><span class="s1">:</span><span class="s3">absolute</span><span class="s1">;</span><span class="s2">top</span><span class="s1">:</span><span class="s5">0</span><span class="s1">;</span><span class="s2">bottom</span><span class="s1">:</span><span class="s5">0</span><span class="s1">;</span><span class="s2">right</span><span class="s1">:</span><span class="s5">0</span><span class="s1">;</span><span class="s2">left</span><span class="s1">:</span><span class="s5">0</span><span class="s1">;</span><span class="s3">&quot;</span><span class="s0">&gt;&lt;/div&gt;</span>
+                    <span class="s0">&lt;/div&gt;</span>
+                    <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;card-content&quot;</span><span class="s0">&gt;</span>
+                        <span class="s0">&lt;span </span><span class="s2">class</span><span class="s3">=&quot;card-title activator&quot;</span><span class="s0">&gt;</span><span class="s1">Les plantes poussent...</span><span class="s0">&lt;/span&gt;</span>
+                    <span class="s0">&lt;/div&gt;</span>
+                <span class="s0">&lt;/div&gt;</span>
+            <span class="s0">&lt;/div&gt;</span>
+            <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;gallery&quot; </span><span class="s2">class </span><span class="s3">= &quot;col s3&quot;</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;a </span><span class="s2">target</span><span class="s3">=&quot;_blank&quot; </span><span class="s2">href</span><span class="s3">=&quot;piege_a_frelon.jpg&quot;</span><span class="s0">&gt;&lt;/a&gt;</span>
+                <span class="s0">&lt;div </span><span class="s2">id </span><span class="s3">= &quot;card-3&quot; </span><span class="s2">class</span><span class="s3">=&quot;card&quot;</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;card-image&quot;</span><span class="s0">&gt;</span>
+                        <span class="s0">&lt;img </span><span class="s2">src</span><span class="s3">=&quot;piege_a_frelon.jpg&quot; </span><span class="s2">height</span><span class="s3">=&quot;400&quot; </span><span class="s2">width</span><span class="s3">=&quot;300&quot;</span><span class="s0">/&gt;</span>
+                        <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;activator waves-effect waves-light&quot; </span><span class="s2">style</span><span class="s3">=&quot;</span><span class="s2">position</span><span class="s1">:</span><span class="s3">absolute</span><span class="s1">;</span><span class="s2">top</span><span class="s1">:</span><span class="s5">0</span><span class="s1">;</span><span class="s2">bottom</span><span class="s1">:</span><span class="s5">0</span><span class="s1">;</span><span class="s2">right</span><span class="s1">:</span><span class="s5">0</span><span class="s1">;</span><span class="s2">left</span><span class="s1">:</span><span class="s5">0</span><span class="s1">;</span><span class="s3">&quot;</span><span class="s0">&gt;&lt;/div&gt;</span>
+                    <span class="s0">&lt;/div&gt;</span>
+                    <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;card-content&quot;</span><span class="s0">&gt;</span>
+                        <span class="s0">&lt;span </span><span class="s2">class</span><span class="s3">=&quot;card-title activator&quot;</span><span class="s0">&gt;</span><span class="s1">Un piège à frelons</span><span class="s0">&lt;/span&gt;</span>
+                    <span class="s0">&lt;/div&gt;</span>
+                <span class="s0">&lt;/div&gt;</span>
+            <span class="s0">&lt;/div&gt;</span>
+        <span class="s0">&lt;/div&gt;</span>
+        <span class="s0">&lt;div </span><span class="s2">class </span><span class="s3">= &quot;row&quot;</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;gallery&quot; </span><span class="s2">class </span><span class="s3">= &quot;col 1&quot;</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;a </span><span class="s2">target</span><span class="s3">=&quot;_blank&quot; </span><span class="s2">href</span><span class="s3">=&quot;ruchette.jpg&quot;</span><span class="s0">&gt;&lt;/a&gt;</span>
+                <span class="s0">&lt;div </span><span class="s2">id </span><span class="s3">= &quot;card-4&quot; </span><span class="s2">class</span><span class="s3">=&quot;card&quot;</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;card-image&quot;</span><span class="s0">&gt;</span>
+                        <span class="s0">&lt;img </span><span class="s2">src</span><span class="s3">=&quot;ruchette.jpg&quot; </span><span class="s2">height</span><span class="s3">=&quot;400&quot; </span><span class="s2">width</span><span class="s3">=&quot;300&quot;</span><span class="s0">/&gt;</span>
+                        <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;activator waves-effect waves-light&quot; </span><span class="s2">style</span><span class="s3">=&quot;</span><span class="s2">position</span><span class="s1">:</span><span class="s3">absolute</span><span class="s1">;</span><span class="s2">top</span><span class="s1">:</span><span class="s5">0</span><span class="s1">;</span><span class="s2">bottom</span><span class="s1">:</span><span class="s5">0</span><span class="s1">;</span><span class="s2">right</span><span class="s1">:</span><span class="s5">0</span><span class="s1">;</span><span class="s2">left</span><span class="s1">:</span><span class="s5">0</span><span class="s1">;</span><span class="s3">&quot;</span><span class="s0">&gt;&lt;/div&gt;</span>
+                    <span class="s0">&lt;/div&gt;</span>
+                    <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;card-content&quot;</span><span class="s0">&gt;</span>
+                        <span class="s0">&lt;span </span><span class="s2">class</span><span class="s3">=&quot;card-title activator&quot;</span><span class="s0">&gt;</span><span class="s1">La ruchette</span><span class="s0">&lt;/span&gt;</span>
+                    <span class="s0">&lt;/div&gt;</span>
+                <span class="s0">&lt;/div&gt;</span>
+            <span class="s0">&lt;/div&gt;</span>
+            <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;gallery&quot; </span><span class="s2">class </span><span class="s3">= &quot;col 2&quot; </span><span class="s0">&gt;</span>
+                <span class="s0">&lt;a </span><span class="s2">target</span><span class="s3">=&quot;_blank&quot; </span><span class="s2">href</span><span class="s3">=&quot;cire_1.gif&quot;</span><span class="s0">&gt;&lt;/a&gt;</span>
+                <span class="s0">&lt;div </span><span class="s2">id </span><span class="s3">= &quot;card-5&quot; </span><span class="s2">class</span><span class="s3">=&quot;card&quot; </span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;card-image&quot;</span><span class="s0">&gt;</span>
+                        <span class="s0">&lt;img </span><span class="s2">src</span><span class="s3">=&quot;cire_1.gif&quot;</span><span class="s0">/&gt;</span>
+                        <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;activator waves-effect waves-light&quot; </span><span class="s2">style</span><span class="s3">=&quot;</span><span class="s2">position</span><span class="s1">:</span><span class="s3">absolute</span><span class="s1">;</span><span class="s2">top</span><span class="s1">:</span><span class="s5">0</span><span class="s1">;</span><span class="s2">bottom</span><span class="s1">:</span><span class="s5">0</span><span class="s1">;</span><span class="s2">right</span><span class="s1">:</span><span class="s5">0</span><span class="s1">;</span><span class="s2">left</span><span class="s1">:</span><span class="s5">0</span><span class="s1">;</span><span class="s3">&quot;</span><span class="s0">&gt;&lt;/div&gt;</span>
+                        <span class="s0">&lt;span </span><span class="s2">class </span><span class="s3">= &quot;bouton&quot;</span><span class="s0">&gt;&lt;a </span><span class="s2">class</span><span class="s3">=&quot;btn-floating btn-large waves-effect waves-light&quot; </span><span class="s2">onclick </span><span class="s3">= &quot;</span><span class="s1">window.location;href = </span><span class="s3">'https://drive.google.com/file/d/1-C3kLffMXbcxR0OwifvpPH9hmUhga8Ic/view?usp=sharing'&quot;</span><span class="s0">&gt;&lt;i </span><span class="s2">class</span><span class="s3">=&quot;material-icons&quot;</span><span class="s0">&gt;</span><span class="s1">add</span><span class="s0">&lt;/i&gt;&lt;/a&gt;&lt;/span&gt;</span>
+                    <span class="s0">&lt;/div&gt;</span>
+                    <span class="s0">&lt;div </span><span class="s2">id </span><span class="s3">= &quot;card-5-content&quot; </span><span class="s2">class</span><span class="s3">=&quot;card-content&quot;</span><span class="s0">&gt;</span>
+                        <span class="s0">&lt;span </span><span class="s2">id </span><span class="s3">= &quot;card-5-text&quot; </span><span class="s2">class</span><span class="s3">=&quot;card-title activator&quot; </span><span class="s0">&gt;</span><span class="s1">Le cirage des cadres</span><span class="s0">&lt;/span&gt;</span>
+                    <span class="s0">&lt;/div&gt;</span>
+                <span class="s0">&lt;/div&gt;</span>
+            <span class="s0">&lt;/div&gt;</span>
+            <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;gallery&quot; </span><span class="s2">class </span><span class="s3">= &quot;col 3&quot;</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;div </span><span class="s2">id </span><span class="s3">= card-6 </span><span class="s2">class</span><span class="s3">=&quot;card&quot;</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;a </span><span class="s2">target</span><span class="s3">=&quot;_blank&quot;</span><span class="s0">&gt;&lt;/a&gt;</span>
+                    <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;card-content&quot;</span><span class="s0">&gt;</span>
+                        <span class="s0">&lt;span </span><span class="s2">class</span><span class="s3">=&quot;card-title activator&quot;</span><span class="s0">&gt;</span><span class="s1">Le sirop</span><span class="s0">&lt;/span&gt;</span>
+                        <span class="s0">&lt;span </span><span class="s2">class </span><span class="s3">= &quot;card-text&quot;</span><span class="s0">&gt;&lt;br&gt;</span><span class="s1">Le sirop est un semblant de miel fait à base d'eau et de sucre, parfois d'extrait de plantes.</span><span class="s0">&lt;br&gt;&lt;br&gt;</span><span class="s1">Il est déposé dans le nourrisseur, si la date de déshivernage a été un peu avancée.</span><span class="s0">&lt;br&gt;</span><span class="s1">Cela permettra aux abeilles d'avoir des réserves tant que les fleurs n'ont pas encore éclos.</span><span class="s0">&lt;br&gt;&lt;/span&gt;</span>
+                    <span class="s0">&lt;/div&gt;</span>
+                <span class="s0">&lt;/div&gt;</span>
+            <span class="s0">&lt;/div&gt;</span>
+        <span class="s0">&lt;/div&gt;</span>
+    <span class="s0">&lt;/div&gt;</span>
+    <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot; col s6&quot;</span><span class="s0">&gt;</span>
+        <span class="s0">&lt;div </span><span class="s2">class </span><span class="s3">= &quot;blocNotes&quot; </span><span class="s0">&gt;</span>
+            <span class="s0">&lt;img </span><span class="s2">src</span><span class="s3">=&quot;bloc_notes.png&quot; </span><span class="s2">height</span><span class="s3">=&quot;1000&quot; </span><span class="s2">width</span><span class="s3">=&quot;1000&quot;</span><span class="s0">/&gt;</span>
+        <span class="s0">&lt;/div&gt;</span>
+        <span class="s0">&lt;div&gt;</span>
+            <span class="s0">&lt;figcaption&gt;</span>
+                <span class="s0">&lt;header&gt;</span><span class="s1">To do list</span><span class="s0">&lt;/header&gt;</span>
+                <span class="s0">&lt;form </span><span class="s2">class</span><span class="s3">=&quot;toDoList&quot; </span><span class="s2">action </span><span class="s3">= &quot;#&quot;</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;p&gt;</span>
+                        <span class="s0">&lt;label&gt;</span>
+                            <span class="s0">&lt;input </span><span class="s2">type</span><span class="s3">=&quot;checkbox&quot;</span><span class="s0">&gt;</span>
+                            <span class="s0">&lt;span </span><span class="s2">class</span><span class="s3">=&quot;checkbox-text&quot;</span><span class="s0">&gt;&lt;strong&gt;</span><span class="s1">Déshiverner</span><span class="s0">&lt;/strong&gt; </span><span class="s1">les abeilles.</span><span class="s0">&lt;/span&gt;&lt;br&gt;</span>
+                        <span class="s0">&lt;/label&gt;</span>
+                    <span class="s0">&lt;/p&gt;</span>
+                    <span class="s0">&lt;p&gt;</span>
+                        <span class="s0">&lt;label&gt;</span>
+                            <span class="s0">&lt;input </span><span class="s2">type</span><span class="s3">=&quot;checkbox&quot;</span><span class="s0">&gt;</span>
+                            <span class="s0">&lt;span </span><span class="s2">class</span><span class="s3">=&quot;checkbox-text&quot;</span><span class="s0">&gt; &lt;strong&gt;</span><span class="s1">Planter ou semer</span><span class="s0">&lt;/strong&gt; </span><span class="s1">les plantes mellifères.</span><span class="s0">&lt;/span&gt;&lt;br&gt;</span>
+                        <span class="s0">&lt;/label&gt;</span>
+                    <span class="s0">&lt;/p&gt;</span>
+                    <span class="s0">&lt;p&gt;</span>
+                        <span class="s0">&lt;label&gt;</span>
+                            <span class="s0">&lt;input </span><span class="s2">type</span><span class="s3">=&quot;checkbox&quot;</span><span class="s0">&gt;</span>
+                            <span class="s0">&lt;span </span><span class="s2">class</span><span class="s3">=&quot;checkbox-text&quot;</span><span class="s0">&gt; &lt;Strong&gt;</span><span class="s1">Préparer</span><span class="s0">&lt;/strong&gt; </span><span class="s1">les pièges contre les frelons.</span><span class="s0">&lt;/span&gt;&lt;br&gt;</span>
+                        <span class="s0">&lt;/label&gt;</span>
+                    <span class="s0">&lt;/p&gt;</span>
+                    <span class="s0">&lt;p&gt;</span>
+                        <span class="s0">&lt;label&gt;</span>
+                            <span class="s0">&lt;input </span><span class="s2">type</span><span class="s3">=&quot;checkbox&quot;</span><span class="s0">&gt;</span>
+                            <span class="s0">&lt;span </span><span class="s2">class</span><span class="s3">=&quot;checkbox-text&quot;</span><span class="s0">&gt; &lt;strong&gt;</span><span class="s1">Poser</span><span class="s0">&lt;/strong&gt; </span><span class="s1">une ruchette dans l'éventualité </span><span class="s0">&lt;br&gt; </span><span class="s1">qu'un essaim se crée.</span><span class="s0">&lt;/span&gt;&lt;br&gt;</span>
+                        <span class="s0">&lt;/label&gt;</span>
+                    <span class="s0">&lt;/p&gt;</span>
+                    <span class="s0">&lt;p&gt;</span>
+                        <span class="s0">&lt;label&gt;</span>
+                            <span class="s0">&lt;input </span><span class="s2">type</span><span class="s3">=&quot;checkbox&quot;</span><span class="s0">&gt;</span>
+                            <span class="s0">&lt;span </span><span class="s2">class</span><span class="s3">=&quot;checkbox-text&quot;</span><span class="s0">&gt; &lt;strong&gt;</span><span class="s1">Préparer</span><span class="s0">&lt;/strong&gt; </span><span class="s1">les hausses et leurs cadres </span><span class="s0">&lt;br&gt; </span><span class="s1">pour récupérer le premier miel.</span><span class="s0">&lt;/span&gt;&lt;br&gt;</span>
+                        <span class="s0">&lt;/label&gt;</span>
+                    <span class="s0">&lt;/p&gt;</span>
+                    <span class="s0">&lt;p&gt;</span>
+                        <span class="s0">&lt;label&gt;</span>
+                            <span class="s0">&lt;input </span><span class="s2">type</span><span class="s3">=&quot;checkbox&quot;</span><span class="s0">&gt;</span>
+                            <span class="s0">&lt;span </span><span class="s2">class</span><span class="s3">=&quot;checkbox-text&quot;</span><span class="s0">&gt; &lt;strong&gt;</span><span class="s1">Nourrir</span><span class="s0">&lt;/strong&gt; </span><span class="s1">les abeilles si besoin avec du </span><span class="s0">&lt;strong&gt; </span><span class="s1">sirop </span><span class="s0">&lt;/strong&gt;</span><span class="s1">.</span><span class="s0">&lt;/span&gt;&lt;br&gt;</span>
+                        <span class="s0">&lt;/label&gt;</span>
+                    <span class="s0">&lt;/p&gt;</span>
+                <span class="s0">&lt;/form&gt;</span>
+                <span class="s0">&lt;p </span><span class="s2">id</span><span class="s3">=&quot;septieme&quot;</span><span class="s0">&gt;</span><span class="s1">La belle saison est là !</span><span class="s0">&lt;/p&gt;</span>
+            <span class="s0">&lt;/figcaption&gt;</span>
+        <span class="s0">&lt;/div&gt;</span>
+    <span class="s0">&lt;/div&gt;</span>
+<span class="s0">&lt;/div&gt;</span>
+<span class="s0">&lt;/body&gt;</span>
+<span class="s0">&lt;script&gt;</span>
+
+
+    <span class="s1">document.addEventListener(</span><span class="s3">'DOMContentLoaded'</span><span class="s1">, </span><span class="s7">function</span><span class="s1">() {</span>
+        <span class="s7">var </span><span class="s1">elems = document.querySelectorAll(</span><span class="s3">'.fixed-action-btn'</span><span class="s1">);</span>
+        <span class="s7">var </span><span class="s1">instances = M.FloatingActionButton.init(elems, {</span>
+            <span class="s1">hoverEnabled: </span><span class="s7">false</span>
+        <span class="s1">});</span>
+    <span class="s1">});</span>
+
+<span class="s0">&lt;/script&gt;</span>
+<span class="s0">&lt;/html&gt;</span></pre>
+</body>
+</html>

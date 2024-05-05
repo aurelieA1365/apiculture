@@ -1,0 +1,386 @@
+<html>
+<head>
+<title>corps_texte.html</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #d5b778;}
+.s1 { color: #bcbec4;}
+.s2 { color: #bababa;}
+.s3 { color: #6aab73;}
+.s4 { color: #7a7e85;}
+.s5 { color: #56a8f5;}
+.s6 { color: #2aacb8;}
+.s7 { color: #cf8e6d;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+corps_texte.html</font>
+</center></td></tr></table>
+<pre><span class="s0">&lt;!DOCTYPE </span><span class="s2">html</span><span class="s0">&gt;</span>
+<span class="s0">&lt;html </span><span class="s2">lang</span><span class="s3">=&quot;fr&quot;</span><span class="s0">&gt;</span>
+<span class="s0">&lt;head&gt;</span>
+    <span class="s0">&lt;meta </span><span class="s2">charset</span><span class="s3">=&quot;UTF-8&quot;</span><span class="s0">&gt;</span>
+    <span class="s0">&lt;title&gt;</span><span class="s1">Les 4 saisons de l'Apiculteur</span><span class="s0">&lt;/title&gt;</span>
+    <span class="s0">&lt;script </span><span class="s2">src</span><span class="s3">=” </span><span class="s2">jquery-2.0.3.min.js”</span><span class="s0">&gt;&lt;/script&gt;</span>
+    <span class="s0">&lt;link </span><span class="s2">rel</span><span class="s3">=&quot;stylesheet&quot; </span><span class="s2">href</span><span class="s3">=&quot;https://fonts.googleapis.com/css?family=Sofia&quot;</span><span class="s0">&gt;</span>
+    <span class="s0">&lt;link </span><span class="s2">href</span><span class="s3">=&quot;https://fonts.googleapis.com/icon?family=Material+Icons&quot; </span><span class="s2">rel</span><span class="s3">=&quot;stylesheet&quot;</span><span class="s0">&gt;</span>
+    <span class="s0">&lt;link </span><span class="s2">rel</span><span class="s3">=&quot;stylesheet&quot; </span><span class="s2">href</span><span class="s3">=&quot;https://cdn.jsdelivr.net/npm/@materializecss/materialize@1.2.1/dist/css/materialize.min.css&quot;</span><span class="s0">&gt;</span>
+    <span class="s0">&lt;script </span><span class="s2">src</span><span class="s3">=&quot;https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js&quot;</span><span class="s0">&gt;&lt;/script&gt;</span>
+    <span class="s0">&lt;script </span><span class="s2">src</span><span class="s3">=&quot;https://cdn.jsdelivr.net/npm/@materializecss/materialize@1.2.1/dist/js/materialize.min.js&quot;</span><span class="s0">&gt;&lt;/script&gt;</span>
+    <span class="s0">&lt;link </span><span class="s2">rel</span><span class="s3">=&quot;stylesheet&quot; </span><span class="s2">href</span><span class="s3">=&quot;https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&quot; </span><span class="s0">/&gt;</span>
+
+    <span class="s0">&lt;style&gt;</span>
+        <span class="s4">/* ---- mise en page ---- */</span>
+<span class="s0">body </span><span class="s1">{</span>
+    <span class="s2">background-color</span><span class="s1">: </span><span class="s5">#efc049</span><span class="s1">;</span>
+    <span class="s2">width</span><span class="s1">: </span><span class="s6">1900</span><span class="s3">px</span><span class="s1">;</span>
+    <span class="s2">height</span><span class="s1">: </span><span class="s6">1080</span><span class="s3">px</span><span class="s1">;</span>
+<span class="s1">}</span>
+<span class="s0">h1 </span><span class="s1">{</span>
+    <span class="s2">padding-top</span><span class="s1">: </span><span class="s6">20</span><span class="s3">px</span><span class="s1">;</span>
+    <span class="s2">padding-bottom</span><span class="s1">:</span><span class="s6">20</span><span class="s3">px</span><span class="s1">;</span>
+    <span class="s2">background-color</span><span class="s1">: </span><span class="s3">peru</span><span class="s1">;</span>
+    <span class="s2">border-style</span><span class="s1">: </span><span class="s3">solid</span><span class="s1">;</span>
+    <span class="s2">box-shadow</span><span class="s1">:  </span><span class="s6">0 4</span><span class="s3">px </span><span class="s6">8</span><span class="s3">px </span><span class="s6">0 </span><span class="s0">rgba</span><span class="s1">(</span><span class="s6">0</span><span class="s1">, </span><span class="s6">0</span><span class="s1">, </span><span class="s6">0</span><span class="s1">, </span><span class="s6">0.2</span><span class="s1">), </span><span class="s6">0 6</span><span class="s3">px </span><span class="s6">20</span><span class="s3">px </span><span class="s6">0 </span><span class="s0">rgba</span><span class="s1">(</span><span class="s6">0</span><span class="s1">, </span><span class="s6">0</span><span class="s1">, </span><span class="s6">0</span><span class="s1">, </span><span class="s6">0.19</span><span class="s1">);</span>
+    <span class="s2">color</span><span class="s1">: </span><span class="s3">white </span><span class="s1">;</span>
+    <span class="s2">text-align</span><span class="s1">: </span><span class="s3">center</span><span class="s1">;</span>
+    <span class="s2">font-family</span><span class="s1">: </span><span class="s3">&quot;Source Sans Pro&quot;</span><span class="s1">;</span>
+    <span class="s2">font-size</span><span class="s1">: </span><span class="s6">50</span><span class="s3">px</span><span class="s1">;</span>
+<span class="s1">}</span>
+<span class="s1">.</span><span class="s0">row</span>
+<span class="s1">{</span>
+    <span class="s2">height</span><span class="s1">: </span><span class="s0">fit-content</span><span class="s1">(</span><span class="s6">30</span><span class="s1">%);</span>
+<span class="s1">}</span>
+<span class="s0">#imageDeMoi</span>
+<span class="s1">{</span>
+    <span class="s2">border-radius</span><span class="s1">: </span><span class="s6">50</span><span class="s3">px</span><span class="s1">;</span>
+<span class="s1">}</span>
+
+<span class="s0">#bouton </span><span class="s1">{</span>
+    <span class="s2">height</span><span class="s1">: </span><span class="s6">55</span><span class="s3">px</span><span class="s1">;</span>
+    <span class="s2">width</span><span class="s1">: </span><span class="s6">230</span><span class="s3">px</span><span class="s1">;</span>
+    <span class="s2">font-family</span><span class="s1">: </span><span class="s3">&quot;Source Sans Pro&quot;</span><span class="s1">;</span>
+    <span class="s2">font-size</span><span class="s1">: </span><span class="s6">20</span><span class="s3">px</span><span class="s1">;</span>
+    <span class="s2">font-weight</span><span class="s1">: </span><span class="s3">bold</span><span class="s1">;</span>
+    <span class="s2">background-color</span><span class="s1">: </span><span class="s3">peru</span><span class="s1">;</span>
+    <span class="s2">color</span><span class="s1">: </span><span class="s3">white</span><span class="s1">;</span>
+    <span class="s2">border-radius</span><span class="s1">: </span><span class="s6">40</span><span class="s1">%;</span>
+<span class="s1">}</span>
+        <span class="s1">.</span><span class="s0">material-symbols-outlined </span><span class="s1">{</span>
+             <span class="s2">font-variation-settings</span><span class="s1">:</span>
+                     <span class="s3">'FILL' </span><span class="s6">0</span><span class="s1">,</span>
+                     <span class="s3">'wght' </span><span class="s6">400</span><span class="s1">,</span>
+                     <span class="s3">'GRAD' </span><span class="s6">0</span><span class="s1">,</span>
+                     <span class="s3">'opsz' </span><span class="s6">24</span>
+         <span class="s1">}</span>
+
+<span class="s1">.</span><span class="s0">photsCarou</span>
+<span class="s1">{</span>
+    <span class="s2">border-radius</span><span class="s1">: </span><span class="s6">40</span><span class="s3">px</span><span class="s1">;</span>
+<span class="s1">}</span>
+
+<span class="s0">h3</span>
+<span class="s1">{</span>
+    <span class="s2">text-align</span><span class="s1">: </span><span class="s3">center</span><span class="s1">;</span>
+    <span class="s2">font-size</span><span class="s1">: </span><span class="s6">30</span><span class="s3">px</span><span class="s1">;</span>
+<span class="s1">}</span>
+
+<span class="s0">p</span>
+<span class="s1">{</span>
+    <span class="s2">font-size</span><span class="s1">: </span><span class="s6">20</span><span class="s3">px</span><span class="s1">;</span>
+<span class="s1">}</span>
+
+<span class="s0">#imageRuche</span>
+<span class="s1">{</span>
+    <span class="s2">border-top-left-radius</span><span class="s1">: </span><span class="s6">50</span><span class="s3">px</span><span class="s1">;</span>
+    <span class="s2">border-top-right-radius</span><span class="s1">: </span><span class="s6">50</span><span class="s3">px</span><span class="s1">;</span>
+    <span class="s2">box-shadow</span><span class="s1">: </span><span class="s6">0 4</span><span class="s3">px </span><span class="s6">8</span><span class="s3">px </span><span class="s6">0 </span><span class="s0">rgba</span><span class="s1">(</span><span class="s6">0</span><span class="s1">, </span><span class="s6">0</span><span class="s1">, </span><span class="s6">0</span><span class="s1">, </span><span class="s6">0.2</span><span class="s1">);</span>
+<span class="s1">}</span>
+<span class="s0">div</span><span class="s1">.</span><span class="s0">image</span>
+<span class="s1">{</span>
+    <span class="s2">display</span><span class="s1">: </span><span class="s3">block</span><span class="s1">;</span>
+    <span class="s2">position</span><span class="s1">: </span><span class="s3">relative</span><span class="s1">;</span>
+    <span class="s2">top</span><span class="s1">: </span><span class="s6">200</span><span class="s3">px</span><span class="s1">;</span>
+    <span class="s2">right</span><span class="s1">: </span><span class="s6">80</span><span class="s3">px</span><span class="s1">;</span>
+    <span class="s2">margin-left</span><span class="s1">: </span><span class="s3">auto</span><span class="s1">;</span>
+    <span class="s2">margin-right</span><span class="s1">: </span><span class="s3">auto</span><span class="s1">;</span>
+    <span class="s2">width</span><span class="s1">: </span><span class="s6">19</span><span class="s1">%;</span>
+<span class="s1">}</span>
+<span class="s0">div</span><span class="s1">.</span><span class="s0">containerImg</span>
+<span class="s1">{</span>
+    <span class="s2">display</span><span class="s1">: </span><span class="s3">block</span><span class="s1">;</span>
+    <span class="s2">position</span><span class="s1">: </span><span class="s3">relative</span><span class="s1">;</span>
+    <span class="s2">top</span><span class="s1">: </span><span class="s6">196</span><span class="s3">px</span><span class="s1">;</span>
+    <span class="s2">left</span><span class="s1">: </span><span class="s6">167</span><span class="s3">px</span><span class="s1">;</span>
+    <span class="s2">background-color</span><span class="s1">: </span><span class="s3">white</span><span class="s1">;</span>
+    <span class="s2">padding</span><span class="s1">: </span><span class="s6">10</span><span class="s3">px</span><span class="s1">;</span>
+    <span class="s2">width</span><span class="s1">: </span><span class="s6">49.1</span><span class="s1">%;</span>
+    <span class="s2">text-align</span><span class="s1">: </span><span class="s3">center</span><span class="s1">;</span>
+    <span class="s2">font-weight</span><span class="s1">:</span><span class="s3">bold</span><span class="s1">;</span>
+    <span class="s2">font-family</span><span class="s1">: </span><span class="s3">&quot;Sofia&quot;</span><span class="s1">, </span><span class="s3">sans-serif</span><span class="s1">;</span>
+    <span class="s2">font-size</span><span class="s1">: </span><span class="s6">40</span><span class="s3">px</span><span class="s1">;</span>
+    <span class="s2">box-shadow</span><span class="s1">: </span><span class="s6">0 4</span><span class="s3">px </span><span class="s6">8</span><span class="s3">px </span><span class="s6">0 </span><span class="s0">rgba</span><span class="s1">(</span><span class="s6">0</span><span class="s1">, </span><span class="s6">0</span><span class="s1">, </span><span class="s6">0</span><span class="s1">, </span><span class="s6">0.2</span><span class="s1">), </span><span class="s6">0 6</span><span class="s3">px </span><span class="s6">20</span><span class="s3">px </span><span class="s6">0 </span><span class="s0">rgba</span><span class="s1">(</span><span class="s6">0</span><span class="s1">, </span><span class="s6">0</span><span class="s1">, </span><span class="s6">0</span><span class="s1">, </span><span class="s6">0.19</span><span class="s1">);</span>
+    <span class="s2">border-bottom-left-radius</span><span class="s1">: </span><span class="s6">50</span><span class="s3">px</span><span class="s1">;</span>
+    <span class="s2">border-bottom-right-radius</span><span class="s1">: </span><span class="s6">50</span><span class="s3">px</span><span class="s1">;</span>
+   <span class="s1">}</span>
+
+<span class="s4">/* ---- positionnement ---- */</span>
+
+        <span class="s0">div</span><span class="s1">.</span><span class="s0">nav-wrapper</span>
+        <span class="s1">{</span>
+            <span class="s2">display</span><span class="s1">: </span><span class="s3">block</span><span class="s1">;</span>
+            <span class="s2">position</span><span class="s1">: </span><span class="s3">absolute</span><span class="s1">;</span>
+            <span class="s2">width</span><span class="s1">: </span><span class="s6">15</span><span class="s1">%;</span>
+            <span class="s2">left</span><span class="s1">: </span><span class="s6">1400</span><span class="s3">px</span><span class="s1">;</span>
+            <span class="s2">top</span><span class="s1">: </span><span class="s6">45</span><span class="s3">px</span><span class="s1">;</span>
+        <span class="s1">}</span>
+        <span class="s1">.</span><span class="s0">entete</span>
+        <span class="s1">{</span>
+            <span class="s2">position</span><span class="s1">: </span><span class="s3">relative</span><span class="s1">;</span>
+            <span class="s2">top</span><span class="s1">: </span><span class="s6">0</span><span class="s1">;</span>
+            <span class="s2">margin-left</span><span class="s1">: </span><span class="s6">35</span><span class="s3">px</span><span class="s1">;</span>
+            <span class="s2">margin-right</span><span class="s1">: </span><span class="s6">35</span><span class="s3">px</span><span class="s1">;</span>
+            <span class="s2">word-spacing</span><span class="s1">: </span><span class="s6">13</span><span class="s3">px</span><span class="s1">;</span>
+
+        <span class="s1">}</span>
+
+        <span class="s0">#imageDeMoi</span>
+        <span class="s1">{</span>
+            <span class="s2">display</span><span class="s1">: </span><span class="s3">block</span><span class="s1">;</span>
+            <span class="s2">position</span><span class="s1">: </span><span class="s3">relative</span><span class="s1">;</span>
+            <span class="s2">top</span><span class="s1">: </span><span class="s6">200</span><span class="s3">px</span><span class="s1">;</span>
+            <span class="s2">left</span><span class="s1">: </span><span class="s6">150</span><span class="s3">px</span><span class="s1">;</span>
+            <span class="s2">box-shadow</span><span class="s1">: </span><span class="s6">0 4</span><span class="s3">px </span><span class="s6">8</span><span class="s3">px </span><span class="s6">0 </span><span class="s0">rgba</span><span class="s1">(</span><span class="s6">0</span><span class="s1">, </span><span class="s6">0</span><span class="s1">, </span><span class="s6">0</span><span class="s1">, </span><span class="s6">0.2</span><span class="s1">), </span><span class="s6">0 6</span><span class="s3">px </span><span class="s6">20</span><span class="s3">px </span><span class="s6">0 </span><span class="s0">rgba</span><span class="s1">(</span><span class="s6">0</span><span class="s1">, </span><span class="s6">0</span><span class="s1">, </span><span class="s6">0</span><span class="s1">, </span><span class="s6">0.19</span><span class="s1">);</span>
+         <span class="s1">}</span>
+        <span class="s0">#bouton</span>
+        <span class="s1">{</span>
+            <span class="s2">display</span><span class="s1">: </span><span class="s3">block</span><span class="s1">;</span>
+            <span class="s2">position</span><span class="s1">: </span><span class="s3">relative</span><span class="s1">;</span>
+            <span class="s2">top</span><span class="s1">: </span><span class="s6">95</span><span class="s3">px</span><span class="s1">;</span>
+            <span class="s2">left</span><span class="s1">: </span><span class="s6">183</span><span class="s3">px</span><span class="s1">;</span>
+        <span class="s1">}</span>
+        <span class="s0">div</span><span class="s1">.</span><span class="s0">textePresentation</span>
+        <span class="s1">{</span>
+            <span class="s2">display</span><span class="s1">: </span><span class="s3">block</span><span class="s1">;</span>
+            <span class="s2">position</span><span class="s1">: </span><span class="s3">relative</span><span class="s1">;</span>
+            <span class="s2">text-align</span><span class="s1">: </span><span class="s3">center</span><span class="s1">;</span>
+            <span class="s2">top</span><span class="s1">: </span><span class="s6">100</span><span class="s3">px</span><span class="s1">;</span>
+            <span class="s2">padding-top</span><span class="s1">: </span><span class="s6">200</span><span class="s3">px</span><span class="s1">;</span>
+            <span class="s2">padding-left</span><span class="s1">: </span><span class="s6">20</span><span class="s3">px</span><span class="s1">;</span>
+            <span class="s2">margin-right</span><span class="s1">: </span><span class="s6">20</span><span class="s3">px</span><span class="s1">;</span>
+        <span class="s1">}</span>
+        <span class="s0">#bienvenue</span>
+        <span class="s1">{</span>
+            <span class="s2">display</span><span class="s1">: </span><span class="s3">block</span><span class="s1">;</span>
+            <span class="s2">position</span><span class="s1">: </span><span class="s3">relative</span><span class="s1">;</span>
+        <span class="s1">}</span>
+
+        <span class="s0">#bonneVisite</span>
+        <span class="s1">{</span>
+            <span class="s2">display</span><span class="s1">: </span><span class="s3">block</span><span class="s1">;</span>
+            <span class="s2">position</span><span class="s1">: </span><span class="s3">relative</span><span class="s1">;</span>
+            <span class="s2">top</span><span class="s1">: </span><span class="s6">0</span><span class="s1">;</span>
+        <span class="s1">}</span>
+        <span class="s1">.</span><span class="s0">carousel</span>
+        <span class="s1">{</span>
+            <span class="s2">display</span><span class="s1">: </span><span class="s3">block</span><span class="s1">;</span>
+            <span class="s2">position</span><span class="s1">: </span><span class="s3">relative</span><span class="s1">;</span>
+            <span class="s2">right</span><span class="s1">: </span><span class="s6">185</span><span class="s3">px</span><span class="s1">;</span>
+            <span class="s2">top</span><span class="s1">: </span><span class="s6">165</span><span class="s3">px</span><span class="s1">;</span>
+            <span class="s2">transform</span><span class="s1">: </span><span class="s0">scale</span><span class="s1">(</span><span class="s6">1.6</span><span class="s1">);</span>
+        <span class="s1">}</span>
+        <span class="s0">#basDePage</span>
+        <span class="s1">{</span>
+            <span class="s2">background-color</span><span class="s1">: </span><span class="s3">peru</span><span class="s1">;</span>
+
+        <span class="s1">}</span>
+        <span class="s4">/* The Modal (background) */</span>
+        <span class="s1">.</span><span class="s0">modal </span><span class="s1">{</span>
+            <span class="s2">display</span><span class="s1">: </span><span class="s3">none</span><span class="s1">; </span><span class="s4">/* Hidden by default */</span>
+            <span class="s2">position</span><span class="s1">: </span><span class="s3">fixed</span><span class="s1">; </span><span class="s4">/* Stay in place */</span>
+            <span class="s2">z-index</span><span class="s1">: </span><span class="s6">1</span><span class="s1">; </span><span class="s4">/* Sit on top */</span>
+            <span class="s2">left</span><span class="s1">: </span><span class="s6">0</span><span class="s1">;</span>
+            <span class="s2">top</span><span class="s1">: </span><span class="s6">0</span><span class="s1">;</span>
+            <span class="s2">width</span><span class="s1">: </span><span class="s6">90</span><span class="s1">%; </span><span class="s4">/* Full width */</span>
+            <span class="s2">height</span><span class="s1">: </span><span class="s6">100</span><span class="s1">%; </span><span class="s4">/* Full height */</span>
+        <span class="s1">}</span>
+
+        <span class="s4">/* Modal Content/Box */</span>
+        <span class="s1">.</span><span class="s0">modal-content </span><span class="s1">{</span>
+            <span class="s2">background-color</span><span class="s1">: </span><span class="s5">#fefefe</span><span class="s1">;</span>
+            <span class="s2">margin</span><span class="s1">: </span><span class="s6">0</span><span class="s1">% </span><span class="s3">auto</span><span class="s1">; </span><span class="s4">/* 15% from the top and centered */</span>
+            <span class="s2">width</span><span class="s1">: </span><span class="s6">80</span><span class="s1">%; </span><span class="s4">/* Could be more or less, depending on screen size */</span>
+            <span class="s2">height</span><span class="s1">: </span><span class="s6">100</span><span class="s3">px</span><span class="s1">;</span>
+        <span class="s1">}</span>
+        <span class="s0">h4</span>
+        <span class="s1">{</span>
+            <span class="s2">padding-top</span><span class="s1">: </span><span class="s6">40</span><span class="s3">px</span><span class="s1">;</span>
+            <span class="s2">padding-bottom</span><span class="s1">: </span><span class="s6">40</span><span class="s3">px</span><span class="s1">;</span>
+            <span class="s2">padding-left</span><span class="s1">: </span><span class="s6">50</span><span class="s3">px</span><span class="s1">;</span>
+            <span class="s2">font-family</span><span class="s1">: </span><span class="s3">&quot;Sofia&quot;</span><span class="s1">;</span>
+            <span class="s2">color</span><span class="s1">: </span><span class="s3">black</span><span class="s1">;</span>
+            <span class="s2">font-size</span><span class="s1">: </span><span class="s6">60</span><span class="s3">px</span><span class="s1">;</span>
+        <span class="s1">}</span>
+        <span class="s0">#modal-content-text</span>
+        <span class="s1">{</span>
+            <span class="s2">margin</span><span class="s1">: </span><span class="s6">75</span><span class="s3">px</span><span class="s1">;</span>
+            <span class="s2">font-family</span><span class="s1">: </span><span class="s3">&quot;Roboto&quot;</span><span class="s1">;</span>
+            <span class="s2">color</span><span class="s1">: </span><span class="s3">black</span><span class="s1">;</span>
+            <span class="s2">font-size</span><span class="s1">: </span><span class="s6">27</span><span class="s3">px</span><span class="s1">;</span>
+        <span class="s1">}</span>
+        <span class="s4">/* The Close Button */</span>
+         <span class="s1">.</span><span class="s0">material-symbols-outlined</span>
+         <span class="s1">{</span>
+             <span class="s2">font-variation-settings</span><span class="s1">:</span>
+                     <span class="s3">'FILL' </span><span class="s6">0</span><span class="s1">,</span>
+                     <span class="s3">'wght' </span><span class="s6">400</span><span class="s1">,</span>
+                     <span class="s3">'GRAD' </span><span class="s6">0</span><span class="s1">,</span>
+                     <span class="s3">'opsz' </span><span class="s6">24</span>
+         <span class="s1">}</span>
+
+        <span class="s0">#lol</span>
+        <span class="s1">{</span>
+            <span class="s2">display</span><span class="s1">: </span><span class="s3">block</span><span class="s1">;</span>
+            <span class="s2">position</span><span class="s1">: </span><span class="s3">relative</span><span class="s1">;</span>
+            <span class="s2">padding-top</span><span class="s1">: </span><span class="s6">13</span><span class="s3">px</span><span class="s1">;</span>
+        <span class="s1">}</span>
+        <span class="s0">close </span><span class="s1">{</span>
+            <span class="s2">font-size</span><span class="s1">: </span><span class="s6">35</span><span class="s3">px</span><span class="s1">;</span>
+            <span class="s2">font-weight</span><span class="s1">: </span><span class="s3">bold</span><span class="s1">;</span>
+            <span class="s2">padding-right</span><span class="s1">: </span><span class="s6">30</span><span class="s3">px</span><span class="s1">;</span>
+            <span class="s2">margin-bottom</span><span class="s1">: </span><span class="s6">600</span><span class="s3">px</span><span class="s1">;</span>
+        <span class="s1">}</span>
+        <span class="s1">.</span><span class="s0">close</span><span class="s1">:</span><span class="s0">focus </span><span class="s1">{</span>
+            <span class="s2">text-decoration</span><span class="s1">: </span><span class="s3">none</span><span class="s1">;</span>
+            <span class="s2">cursor</span><span class="s1">: </span><span class="s3">pointer</span><span class="s1">;</span>
+        <span class="s1">}</span>
+        <span class="s1">.</span><span class="s0">modal-close</span>
+            <span class="s1">{</span>
+            <span class="s2">padding-bottom</span><span class="s1">: </span><span class="s6">50</span><span class="s3">px</span><span class="s1">;</span>
+            <span class="s2">float</span><span class="s1">: </span><span class="s3">right</span><span class="s1">;</span>
+            <span class="s2">background-color</span><span class="s1">: </span><span class="s3">peru</span><span class="s1">;</span>
+            <span class="s2">color</span><span class="s1">: </span><span class="s3">black</span><span class="s1">;</span>
+            <span class="s1">}</span>
+        <span class="s1">.</span><span class="s0">footer-copyright</span>
+        <span class="s1">{</span>
+            <span class="s2">position</span><span class="s1">: </span><span class="s3">fixed</span><span class="s1">;</span>
+            <span class="s2">left</span><span class="s1">: </span><span class="s6">0</span><span class="s1">;</span>
+            <span class="s2">bottom</span><span class="s1">: </span><span class="s6">0</span><span class="s1">;</span>
+            <span class="s2">width</span><span class="s1">: </span><span class="s6">100</span><span class="s1">%;</span>
+        <span class="s1">}</span>
+    <span class="s0">&lt;/style&gt;</span>
+
+<span class="s0">&lt;header </span><span class="s2">class </span><span class="s3">=&quot;entete&quot;</span><span class="s0">&gt;</span>
+       <span class="s0">&lt;nav&gt;</span>
+           <span class="s0">&lt;h1&gt; </span><span class="s1">Les 4 saisons </span><span class="s0">&lt;br&gt; </span><span class="s1">de l'Apiculteur</span><span class="s0">&lt;/h1&gt;</span>
+            <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;nav-wrapper&quot;</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;form&gt;</span>
+                    <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;input-field&quot;</span><span class="s0">&gt;</span>
+                        <span class="s0">&lt;input </span><span class="s2">id</span><span class="s3">=&quot;search&quot; </span><span class="s2">type</span><span class="s3">=&quot;search&quot; </span><span class="s2">required</span><span class="s0">&gt;</span>
+                        <span class="s0">&lt;label </span><span class="s2">class</span><span class="s3">=&quot;label-icon&quot; </span><span class="s2">for</span><span class="s3">=&quot;search&quot;</span><span class="s0">&gt;&lt;i </span><span class="s2">class</span><span class="s3">=&quot;material-icons&quot;</span><span class="s0">&gt;</span><span class="s1">search</span><span class="s0">&lt;/i&gt;&lt;/label&gt;</span>
+                         <span class="s0">&lt;i </span><span class="s2">class</span><span class="s3">=&quot;material-icons&quot;</span><span class="s0">&gt;</span><span class="s1">close</span><span class="s0">&lt;/i&gt;</span>
+                    <span class="s0">&lt;/div&gt;</span>
+                <span class="s0">&lt;/form&gt;</span>
+            <span class="s0">&lt;/div&gt;</span>
+        <span class="s0">&lt;/nav&gt;</span>
+<span class="s0">&lt;/header&gt;</span>
+
+<span class="s0">&lt;/head&gt;</span>
+
+<span class="s0">&lt;body&gt;</span>
+<span class="s0">&lt;div </span><span class="s2">class </span><span class="s3">= divider</span><span class="s0">&gt;&lt;/div&gt;</span>
+    <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot; section&quot;</span><span class="s0">&gt;</span>
+        <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;row&quot; </span><span class="s2">style</span><span class="s3">=&quot;</span><span class="s2">gap</span><span class="s1">: </span><span class="s6">5</span><span class="s3">px</span><span class="s1">;</span><span class="s3">&quot;</span><span class="s0">&gt;</span>
+
+            <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;col l4&quot;</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;img </span><span class="s2">id</span><span class="s3">=&quot;imageDeMoi&quot; </span><span class="s2">src</span><span class="s3">=&quot;moi_api.JPG&quot; </span><span class="s2">height</span><span class="s3">=&quot;490&quot; </span><span class="s2">width</span><span class="s3">=&quot;300&quot;</span><span class="s0">/&gt;</span>
+                <span class="s0">&lt;a </span><span class="s2">id</span><span class="s3">=&quot;bouton&quot; </span><span class="s2">class</span><span class="s3">=&quot;waves-effect wavelight btn-large&quot; </span><span class="s2">onclick </span><span class="s3">= &quot;</span><span class="s1">window.location.href = </span><span class="s3">'corps_texte_outils.html'&quot;</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;i </span><span class="s2">class</span><span class="s3">=&quot;material_icons left&quot;</span><span class="s0">&gt;</span>
+                        <span class="s0">&lt;span </span><span class="s2">class</span><span class="s3">=&quot;material-symbols-outlined&quot;</span><span class="s0">&gt;</span><span class="s1">handyman</span><span class="s0">&lt;/span&gt;</span>
+                        <span class="s1">Les outils</span>
+                    <span class="s0">&lt;/i&gt;</span>
+                <span class="s0">&lt;/a&gt;</span>
+            <span class="s0">&lt;/div&gt;</span>
+
+            <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;col l4&quot;</span><span class="s0">&gt;</span>
+                 <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;carousel&quot;</span><span class="s0">&gt;</span>
+                     <span class="s0">&lt;a </span><span class="s2">class</span><span class="s3">=&quot;carousel-item&quot;  </span><span class="s2">onclick </span><span class="s3">= &quot;</span><span class="s1">window.location;href = </span><span class="s3">'http://localhost:63342/site_essai_1/corps_texte_page_printemps.html?_ijt=6ktblpfi7ofep9o77nmcu6rdgi&amp;_ij_reload=RELOAD_ON_SAVE'&quot;</span><span class="s0">&gt;</span>
+                         <span class="s0">&lt;img </span><span class="s2">class </span><span class="s3">= photsCarou </span><span class="s2">src</span><span class="s3">=&quot;printemps.jpg&quot; </span><span class="s2">height</span><span class="s3">=&quot;300&quot; </span><span class="s2">width</span><span class="s3">=&quot;200&quot;</span><span class="s0">/&gt;</span>
+                     <span class="s0">&lt;/a&gt;</span>
+                     <span class="s0">&lt;a </span><span class="s2">class</span><span class="s3">=&quot;carousel-item&quot;  </span><span class="s2">onclick </span><span class="s3">= &quot;</span><span class="s1">window.location;href = </span><span class="s3">'http://localhost:63342/site_essai_1/corps_texte_page_hiver.html?_ijt=6ktblpfi7ofep9o77nmcu6rdgi&amp;_ij_reload=RELOAD_ON_SAVE'&quot;</span><span class="s0">&gt;</span>
+                         <span class="s0">&lt;img </span><span class="s2">class </span><span class="s3">= photsCarou </span><span class="s2">src</span><span class="s3">=&quot;hiver.jpg&quot; </span><span class="s2">height</span><span class="s3">=&quot;300&quot; </span><span class="s2">width</span><span class="s3">=&quot;200&quot;</span><span class="s0">/&gt;</span>
+                     <span class="s0">&lt;/a&gt;</span>
+                     <span class="s0">&lt;a </span><span class="s2">class</span><span class="s3">=&quot;carousel-item&quot; </span><span class="s2">onclick </span><span class="s3">= &quot;</span><span class="s1">window.location;href = </span><span class="s3">'http://localhost:63342/site_essai_1/corps_texte_page_automne.html?_ijt=6ktblpfi7ofep9o77nmcu6rdgi&amp;_ij_reload=RELOAD_ON_SAVE'&quot;</span><span class="s0">&gt;</span>
+                         <span class="s0">&lt;img </span><span class="s2">class </span><span class="s3">= photsCarou </span><span class="s2">src</span><span class="s3">=&quot;automne.jpg&quot; </span><span class="s2">height</span><span class="s3">=&quot;300&quot; </span><span class="s2">width</span><span class="s3">=&quot;200&quot;</span><span class="s0">/&gt;</span>
+                     <span class="s0">&lt;/a&gt;</span>
+                     <span class="s0">&lt;a </span><span class="s2">class</span><span class="s3">=&quot;carousel-item&quot;  </span><span class="s2">onclick </span><span class="s3">= &quot;</span><span class="s1">window.location;href = </span><span class="s3">'http://localhost:63342/site_essai_1/coprs_texte_page_ete.html?_ijt=cdr8q210ivfetnk1jcij29hj2a'&quot;</span><span class="s0">&gt;</span>
+                         <span class="s0">&lt;img </span><span class="s2">class </span><span class="s3">= photsCarou </span><span class="s2">src</span><span class="s3">=&quot;ete.JPG&quot; </span><span class="s2">height</span><span class="s3">=&quot;300&quot; </span><span class="s2">width</span><span class="s3">=&quot;200&quot;</span><span class="s0">/&gt;</span>
+                    <span class="s0">&lt;/a&gt;</span>
+                 <span class="s0">&lt;/div&gt;</span>
+                <span class="s0">&lt;div </span><span class="s2">class </span><span class="s3">= textePresentation</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;h3 </span><span class="s2">id</span><span class="s3">=&quot;bienvenue&quot;</span><span class="s0">&gt;</span>
+                    <span class="s1">Bienvenue dans ce site qui présente ma pratique de l'Apiculture</span>
+                    <span class="s0">&lt;/h3&gt;</span>
+                    <span class="s0">&lt;p&gt;</span>
+                    <span class="s1">Voici différentes rubriques qui vous présenteront les différentes étapes par lesquelles passent l'apiculteur au cours d'une année!</span>
+                    <span class="s0">&lt;/p&gt;</span>
+                    <span class="s0">&lt;h3 </span><span class="s2">id</span><span class="s3">=&quot;bonneVisite&quot;</span><span class="s0">&gt;</span>
+                    <span class="s1">Bonne visite !</span>
+                    <span class="s0">&lt;/h3&gt;</span>
+                <span class="s0">&lt;/div&gt;</span>
+            <span class="s0">&lt;/div&gt;</span>
+
+            <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;col l4&quot;</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;image&quot; </span><span class="s2">onclick </span><span class="s3">= </span><span class="s1">window.location.href=</span><span class="s3">'http://localhost:63342/site_essai_1/corps_texte_page_ruche.html?_ijt=4ntvof1748fvlstgl83chhtrmt&amp;_ij_reload=RELOAD_ON_SAVE'</span><span class="s0">&gt;</span>
+                     <span class="s0">&lt;img </span><span class="s2">id</span><span class="s3">=&quot;imageRuche&quot; </span><span class="s2">src</span><span class="s3">=&quot;ruche_proche_de_cote.jpg&quot; </span><span class="s2">height</span><span class="s3">=&quot;400&quot; </span><span class="s2">width</span><span class="s3">=&quot;300&quot; </span><span class="s0">/&gt;</span>
+                <span class="s0">&lt;/div&gt;</span>
+                <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;containerImg&quot; </span><span class="s2">onclick </span><span class="s3">= </span><span class="s1">window.location.href=</span><span class="s3">'http://localhost:63342/site_essai_1/corps_texte_page_ruche.html?_ijt=4ntvof1748fvlstgl83chhtrmt&amp;_ij_reload=RELOAD_ON_SAVE'</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;p&gt;</span><span class="s1">La ruche</span><span class="s0">&lt;/p&gt;</span>
+                <span class="s0">&lt;/div&gt;</span>
+            <span class="s0">&lt;/div&gt;</span>
+        <span class="s0">&lt;/div&gt;</span>
+    <span class="s0">&lt;/div&gt;</span>
+<span class="s0">&lt;footer </span><span class="s2">class </span><span class="s3">= &quot;footer-copyright&quot; </span><span class="s0">&gt;</span>
+    <span class="s0">&lt;nav </span><span class="s2">id </span><span class="s3">= basDePage</span><span class="s0">&gt;</span>
+        <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;nav-wrapper-bottom&quot;</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;ul </span><span class="s2">id</span><span class="s3">=&quot;nav-mobile&quot; </span><span class="s2">class</span><span class="s3">=&quot;left hide-on-med-and-down&quot;</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;li&gt;&lt;a </span><span class="s2">href</span><span class="s3">=&quot;http://localhost:63342/site_essai_1/mentions-legales.html?_ijt=p4m77fiu6ua4j4383joe9i9ifh&amp;_ij_reload=RELOAD_ON_SAVE&quot;</span><span class="s0">&gt;</span><span class="s1">Mentions légales</span><span class="s0">&lt;/a&gt;&lt;/li&gt;</span>
+                <span class="s0">&lt;li&gt;&lt;a </span><span class="s2">href</span><span class="s3">=&quot;http://localhost:63342/site_essai_1/CGU.html?_ijt=5dubmhhi61noikrff0jm7gdor0&amp;_ij_reload=RELOAD_ON_SAVE&quot;</span><span class="s0">&gt;</span><span class="s1">CGU</span><span class="s0">&lt;/a&gt;&lt;/li&gt;</span>
+                <span class="s0">&lt;li&gt;&lt;span </span><span class="s2">data-target</span><span class="s3">=&quot;modal1&quot; </span><span class="s2">class</span><span class="s3">=&quot;modal-trigger&quot;</span><span class="s0">&gt;&lt;a </span><span class="s2">href</span><span class="s3">=&quot;#!&quot;</span><span class="s0">&gt;</span><span class="s1">Gestion de cookies</span><span class="s0">&lt;/a&gt;&lt;/span&gt;</span>
+                    <span class="s0">&lt;div </span><span class="s2">id</span><span class="s3">=&quot;modal1&quot; </span><span class="s2">class</span><span class="s3">=&quot;modal modal-fixed-footer&quot;</span><span class="s0">&gt;</span>
+                        <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;modal-content&quot;</span><span class="s0">&gt;</span>
+                            <span class="s0">&lt;span </span><span class="s2">class</span><span class="s3">=&quot;close&quot;</span><span class="s0">&gt;&lt;a </span><span class="s2">href</span><span class="s3">=&quot;#!&quot; </span><span class="s2">class</span><span class="s3">=&quot;modal-close btn&quot;</span><span class="s0">&gt;&lt;span </span><span class="s2">id </span><span class="s3">= &quot;lol&quot; </span><span class="s2">class</span><span class="s3">=&quot;material-symbols-outlined&quot;</span><span class="s0">&gt;</span><span class="s1">close</span><span class="s0">&lt;/span&gt;&lt;/a&gt;&lt;/span&gt;</span>
+                            <span class="s0">&lt;h4&gt;</span><span class="s1">La gestion de cookies</span><span class="s0">&lt;/h4&gt;</span>
+                            <span class="s0">&lt;p </span><span class="s2">id</span><span class="s3">=&quot;modal-content-text&quot;</span><span class="s0">&gt;</span><span class="s1">En ce qui concerne les cookies, on ne pourra déterminer leur quantité et leur origines qu'une fois le site mis en ligne.</span>
+                                <span class="s0">&lt;br&gt;</span><span class="s1">On pourra alors faire une analyse qui déterminera leur nature et leur quantité pour avertir nos usagers.</span><span class="s0">&lt;/p&gt;</span>
+                        <span class="s0">&lt;/div&gt;</span>
+                    <span class="s0">&lt;/div&gt;</span>
+                <span class="s0">&lt;/li&gt;</span>
+            <span class="s0">&lt;/ul&gt;</span>
+        <span class="s0">&lt;/div&gt;</span>
+    <span class="s0">&lt;/nav&gt;</span>
+<span class="s0">&lt;/footer&gt;</span>
+<span class="s0">&lt;/body&gt;</span>
+
+<span class="s0">&lt;script&gt;</span>
+    <span class="s1">document.addEventListener(</span><span class="s3">'DOMContentLoaded'</span><span class="s1">, </span><span class="s7">function</span><span class="s1">()</span>
+    <span class="s1">{</span>
+        <span class="s7">var </span><span class="s1">elems = document.querySelectorAll(</span><span class="s3">'.carousel'</span><span class="s1">);</span>
+        <span class="s7">var </span><span class="s1">instance = M.Carousel.init(elems, {});</span>
+    <span class="s1">});</span>
+
+    <span class="s1">document.addEventListener(</span><span class="s3">'DOMContentLoaded'</span><span class="s1">, </span><span class="s7">function</span><span class="s1">() {</span>
+        <span class="s7">var </span><span class="s1">elems = document.querySelectorAll(</span><span class="s3">'.modal'</span><span class="s1">);</span>
+        <span class="s7">var </span><span class="s1">instances = M.Modal.init(elems, {</span>
+            <span class="s1">preventScrolling: </span><span class="s7">true</span><span class="s1">, dismissible: </span><span class="s7">true</span><span class="s1">,</span>
+        <span class="s1">});</span>
+        <span class="s7">var </span><span class="s1">instance = M.Modal.getInstance(elem);</span>
+        <span class="s1">instance.open();</span>
+    <span class="s1">});</span>
+<span class="s0">&lt;/script&gt;</span>
+<span class="s0">&lt;/html&gt;</span></pre>
+</body>
+</html>
